@@ -1,0 +1,455 @@
+#index{
+
+	overflow: hidden;
+    overflow-x: hidden;
+  	/* background-color: #fff533;*/
+ }
+    ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+
+header{
+	border: 1px solid green;
+	display: flex;
+	position: relative;
+	top: 5vh;
+	width: 99vw;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+nav{
+	display: inline;
+	width: 7vw;
+	height: 4vh;
+	margin: 0 0 0 63%;
+}
+
+nav a:hover{
+	color: #ffe533;
+	transition: 1s all ease;
+}
+
+nav li{
+	padding: 0.2em;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase; /*Mettre en maj*/
+	text-align: right;
+}
+
+
+/*   _          _                 _   _                                            
+    / \   _ __ (_)_ __ ___   __ _| |_(_) ___  _ __                                 
+   / _ \ | '_ \| | '_ ` _ \ / _` | __| |/ _ \| '_ \                                
+  / ___ \| | | | | | | | | | (_| | |_| | (_) | | | |                               
+ /_/   \_\_| |_|_|_| |_| |_|\__,_|\__|_|\___/|_| |_|    _        _   _             
+ | |_ _____  _| |_ ___   _ __  _ __ /_/  ___  ___ _ __ | |_ __ _| |_(_) ___  _ __  
+ | __/ _ \ \/ / __/ _ \ | '_ \| '__/ _ \/ __|/ _ \ '_ \| __/ _` | __| |/ _ \| '_ \ 
+ | ||  __/>  <| ||  __/ | |_) | | |  __/\__ \  __/ | | | || (_| | |_| | (_) | | | |
+  \__\___/_/\_\\__\___| | .__/|_|  \___||___/\___|_| |_|\__\__,_|\__|_|\___/|_| |_|
+                        |_|  														*/
+
+#conteneurlogo{
+	display: flex;
+	margin-left: 7vw;
+	width: 13vw;
+	height: 4vh;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+
+#textpresent{
+	display: inline-block;
+	margin-left: 15%;
+}
+
+.name{
+	animation: flash 3s;
+	text-transform: uppercase;
+}
+
+.name2{
+	text-transform: lowercase;
+}
+
+@keyframes flash{
+	0% { opacity: 0;}
+	75% { opacity: 1;}
+}
+
+
+/*_____ _ _                         ___           _           
+ |_   _(_) |_ _ __ ___  ___        |_ _|_ __   __| | _____  __
+   | | | | __| '__/ _ \/ __|        | || '_ \ / _` |/ _ \ \/ /
+   | | | | |_| | |  __/\__ \        | || | | | (_| |  __/>  < 
+   |_| |_|\__|_|  \___||___/       |___|_| |_|\__,_|\___/_/\_\
+                                                              */
+
+#navtitres{
+	position: relative;
+	width: 88vw;
+	height: 65vh;
+	top: 18em;
+	z-index: 99;
+}
+
+.boitetitre{
+	position: relative;
+	margin-left: 7vw;
+	width: 43vw;
+	margin-top: 30px;
+	z-index: 99;
+}
+
+/* FOND APPARITION VIA HOVER */
+
+.boitetitre1:hover #imageinternetus{
+	opacity: 1;
+	transition: 0.3s all ease;
+}
+
+.boitetitre2:hover #imagenonsense{
+	opacity: 1;
+	transition: 0.3s all ease;
+}
+
+.boitetitre3:hover #imagestopmotion{
+	opacity: 1;
+	transition: 0.3s all ease;
+}
+
+.boitetitre4:hover #imagephoto{
+	opacity: 1;
+	transition: 0.3s all ease;
+}
+
+.boitetitre5:hover #imagelinea{
+	opacity: 1;
+	transition: 0.3s all ease;
+}
+
+/*------------------------------------*/
+
+/* IMAGES DE FOND*/
+
+#imageinternetus{
+	width: 47vw;
+	height: 100vh;
+	background-image: url("../images/sauvezinternetus/nuage.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -2em;
+	left: 40em;
+	z-index: 5;
+	opacity: 0;
+}
+
+
+#imagenonsense{
+	width: 47vw;
+	height: 100vh;
+	background-image: url("../images/abecedaire/preview.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -7em;
+	left: 40em;
+	z-index: 4;
+	opacity: 0;
+}
+
+
+#imagestopmotion{
+	width: 47vw;
+	height: 100vh;
+	background-image: url("../images/stopmotion/stopmotion6.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -12em;
+	left: 40em;
+	z-index: 3;
+	opacity: 0;
+}
+
+
+#imagephoto{
+	width: 40vw;
+	height: 100vh;
+	background-image: url("../images/photographie/photorandom/bootall.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -17em;
+	left: 57em;
+	z-index: 2;
+	opacity: 0;
+}
+
+
+#imagelinea{
+	width: 47vw;
+	height: 100vh;
+	background-image: url("../images/linea/accueil.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -22em;
+	left: 40em;
+	opacity: 0;
+	z-index: 1;
+}
+
+.titre {
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 3em;
+	z-index: 98;
+	transition: 0.6s all ease;
+}
+
+
+.titre:hover{
+	font-weight: 700;
+	font-size: 5em;
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color : black;
+
+	-moz-text-stroke-width: 1px;
+	-moz-text-stroke-color : black;
+	transition: 0.4s ease-out;
+}
+
+.soustitre {
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;	
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-top: 1em;
+	display: none;
+}
+
+
+.boitetitre:hover .soustitre {
+	display: block;
+}
+
+
+.allprojects{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase; /*Mettre en maj*/
+	margin-left: 7vw;
+	margin-top: 5em;
+	width: 43vw;
+	font-size: 1em;
+
+}
+
+
+
+/*____                                 _    _                 _   
+ |  _ \ __ _  __ _  ___               / \  | |__   ___  _   _| |_ 
+ | |_) / _` |/ _` |/ _ \             / _ \ | '_ \ / _ \| | | | __|
+ |  __/ (_| | (_| |  __/            / ___ \| |_) | (_) | |_| | |_ 
+ |_|   \__,_|\__, |\___|           /_/   \_\_.__/ \___/ \__,_|\__|
+             |___/                                                */
+
+/*LES DEUX SECTIONS*/
+	#about{
+		display: flex;
+		border: 1px solid blue;
+		width: 50vw;
+		height: 130vh;
+		position: relative;
+		top: 3em;
+	}
+
+
+	#imageab{
+		display: flex;
+		float: right;
+		position: relative;
+		top: 3em;
+		border: 1px solid blue;
+		width: 49vw;
+		height: 130vh;
+	}
+
+#imageabout{
+	width: 27%;
+	position: fixed;
+	margin-top: 14em;
+	margin-left: 7em;
+	z-index: 1;
+}
+
+
+#textesabout{
+	margin-top: 14em;
+	margin-left: 7vw;
+	border: 1px solid orange;
+	width: 32vw;
+	height: 85vh;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+#about p{
+	line-height: 1.3em;
+}
+
+.titleabout{
+	font-weight: 700;
+	font-size: 3em;
+}
+
+.textabout{
+	margin-top: 5em;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.textabout2{
+	margin-top: 3em;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.textabout3{
+	margin-top: 3em;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.liencv{
+	margin-top: 1.4em;
+}
+
+/*------------------------------------------------*/
+/* --------------------CONTACT--------------------*/
+/*------------------------------------------------*/
+
+.titlecontact{
+	margin-top: 3.5em;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+.textcontact{
+	margin-top: 1em;
+	font-size: 1.1em;
+}
+
+.insta{
+	margin-top: 2em;
+}
+
+.insta, .mail{
+	font-size : 1em;
+	font-weight: 400;
+}
+
+.boldavecespace, .boldavecespace2{
+	font-weight: 700;
+}
+
+.boldavecespace{
+	padding-right: 1.8em;
+}
+
+.boldavecespace2{
+	padding-right: 5em;
+}
+
+
+
+
+/* ____ _           _                __      _                _           _        
+  / ___| |__   ___ (_)_  __    ___  /_/ _ __(_) ___     _ __ | |__   ___ | |_ ___  
+ | |   | '_ \ / _ \| \ \/ /   / __|/ _ \ '__| |/ _ \   | '_ \| '_ \ / _ \| __/ _ \ 
+ | |___| | | | (_) | |>  <    \__ \  __/ |  | |  __/   | |_) | | | | (_) | || (_) |
+  \____|_| |_|\___/|_/_/\_\   |___/\___|_|  |_|\___|   | .__/|_| |_|\___/ \__\___/ 
+                                                       |_|                         */
+	
+	#choiximage{
+		display: flex;
+		float: right;
+		position: relative;
+		top: 3em;
+		width: 49vw;
+		height: 89vh;
+		border: 1px solid red;
+	}
+
+	#seriephoto{
+		float: left;
+		width: 50vw;
+		height: 89vh;
+		border: 1px solid red;
+		position: relative;
+		top: 3em;
+		font-family: 'Poppins', sans-serif;
+	}
+
+#imgphoto{
+	position: fixed;
+	width: 32%;
+	border: 1px solid blue;
+	margin-top: 8em;
+	margin-left: 5em;
+	animation: drift 1s ease-in-out;
+	opacity: 1;
+}
+
+@keyframes drift{
+	0% {opacity: 0.4; margin-top: 6em;}
+	100% {opacity: 1; margin-top: 8em;}
+}
+
+#titrecatephoto{
+		margin-top: 29em;
+		margin-left: 7vw;
+		border: 1px solid green;
+		width: 30vw;
+		height: 27vh;
+}
+
+
+.titleseriephoto{
+	font-weight: 700;
+	font-size: 5.6em;
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+
+}
+
+.serie1{
+	margin-top: 2.3em;
+}
+
+.serie1, .serie2{
+	font-weight: 700;
+	font-size: 2.2em;
+}
+
+.serie2{
+	line-height: 2.4em;
+}
